@@ -24,7 +24,7 @@ import (
 )
 
 var (
-	FRPTLSHeadByte = 0x17
+	FRPTLSHeadByte = 0xCF
 )
 
 func WrapTLSClientConn(c net.Conn, tlsConfig *tls.Config, disableCustomTLSHeadByte bool) (out net.Conn) {
